@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Musiktheorie – C-Dur</title>
+<script src="https://cdn.jsdelivr.net/npm/vexflow@4.2.2/build/cjs/vexflow.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,700&family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<button class="hamburger" id="hamburger" aria-label="Menü">☰</button>
+<div class="overlay" id="overlay"></div>
+
+<nav class="sidebar" id="sidebar">
+  <div class="sidebar-brand"><h2>Musiktheorie</h2><span>C-Dur Interaktiv</span></div>
+  <div class="nav-items">
+    <button class="nav-item active" data-page="home"><div class="nav-num">♪</div><div class="nav-label">Startseite</div></button>
+    <button class="nav-item" data-page="s1"><div class="nav-num">01</div><div class="nav-label">Tonleitern</div></button>
+    <button class="nav-item" data-page="s2"><div class="nav-num">02</div><div class="nav-label">Stufentheorie</div></button>
+    <button class="nav-item" data-page="s3"><div class="nav-num">03</div><div class="nav-label">Funktionstheorie</div></button>
+    <button class="nav-item" data-page="s4"><div class="nav-num">04</div><div class="nav-label">Umkehrungen</div></button>
+    <button class="nav-item" data-page="s5"><div class="nav-num">05</div><div class="nav-label">Kadenz</div></button>
+    <button class="nav-item" data-page="s6"><div class="nav-num">06</div><div class="nav-label">Akkorde erstellen</div></button>
+    <button class="nav-item" data-page="s7"><div class="nav-num">07</div><div class="nav-label">Melodie schreiben</div></button>
+    <button class="nav-item" data-page="s8"><div class="nav-num">08</div><div class="nav-label">Tempo & Dynamik</div></button>
+    <button class="nav-item" data-page="s9"><div class="nav-num">09</div><div class="nav-label">Der Quintenzirkel</div></button>
+    <button class="nav-item" data-page="s9"><div class="nav-num">09</div><div class="nav-label">Der Quintenzirkel</div></button>
+  </div>
+  <div class="nav-footer">Musiktheorie · 2026</div>
+</nav>
+
+<div class="main" id="main">
+
+  <div class="float-panel" id="bpanel"><button class="fp-btn" id="bp-up">▲ ♯</button><div class="fp-name" id="bp-name">C</div><button class="fp-btn" id="bp-dn">▼ ♭</button><button class="fp-btn fp-btn-del" id="bp-del">✕ del</button><button class="fp-close" id="bp-close">✕</button></div>
+  <div class="float-panel" id="s7panel"><button class="fp-btn" id="s7p-u1">▲ ½</button><button class="fp-btn" id="s7p-u2">▲ 1</button><div class="fp-name" id="s7p-name">C</div><button class="fp-btn" id="s7p-d1">▼ ½</button><button class="fp-btn" id="s7p-d2">▼ 1</button><button class="fp-btn fp-btn-del" id="s7p-del">✕ del</button><button class="fp-close" id="s7p-close">✕</button></div>
+
+  <!-- HOME -->
+  <div class="page active" id="page-home">
+    <div class="hero">
+      <div class="hero-label">Musiktheorie Interaktiv</div>
+      <h1>Dein Einstieg in<br>die Welt der<br>Harmonien</h1>
+      <p>Tonleitern, Dreiklänge, Funktionstheorie und Umkehrungen – visuell und klanglich erleben.</p>
+      <div class="hero-cards">
+        <div class="hero-card" data-goto="s1"><div class="hero-card-num">01</div><div class="hero-card-title">Tonleitern</div></div>
+        <div class="hero-card" data-goto="s2"><div class="hero-card-num">02</div><div class="hero-card-title">Stufentheorie</div></div>
+        <div class="hero-card" data-goto="s3"><div class="hero-card-num">03</div><div class="hero-card-title">Funktionstheorie</div></div>
+        <div class="hero-card" data-goto="s4"><div class="hero-card-num">04</div><div class="hero-card-title">Umkehrungen</div></div>
+        <div class="hero-card" data-goto="s5"><div class="hero-card-num">05</div><div class="hero-card-title">Kadenz</div></div>
+        <div class="hero-card" data-goto="s6"><div class="hero-card-num">06</div><div class="hero-card-title">Akkorde erstellen</div></div>
+        <div class="hero-card" data-goto="s7"><div class="hero-card-num">07</div><div class="hero-card-title">Melodie schreiben</div></div>
+        <div class="hero-card" data-goto="s8"><div class="hero-card-num">08</div><div class="hero-card-title">Tempo & Dynamik</div></div>
+        <div class="hero-card" data-goto="s9"><div class="hero-card-num">09</div><div class="hero-card-title">Der Quintenzirkel</div></div>
+        <div class="hero-card" data-goto="s9"><div class="hero-card-num">09</div><div class="hero-card-title">Der Quintenzirkel</div></div>
+      </div>
+      <div class="hero-deco">𝄞</div>
+    </div>
+  </div>
+
+  <!-- S1 -->
+  <div class="page" id="page-s1">
+    <div class="sec-header sh-1"><div class="sec-breadcrumb"><a href="#" data-goto="home">Start</a><span>›</span>Tonleitern</div><div class="sec-num">01</div><h2>Tonleitern</h2><p class="desc">Die wichtigsten Tonleitern im Überblick – Dur und die drei Moll-Varianten. Klicke auf die Noten, um sie einzeln zu hören, oder spiele die ganze Tonleiter ab.</p></div>
+    <div class="sec-body">
+      <div class="hint">🎵 Note anklicken = Ton hören</div>
+
+      <div class="white-card" style="margin-bottom:20px;"><div style="font-size:1.2em;font-weight:700;color:#4527a0;letter-spacing:1px;margin-bottom:8px;">C-Dur</div><p class="desc" style="margin-bottom:12px;">Die Grundtonleiter ohne Vorzeichen. Aufbau: Ganzton – Ganzton – Halbton – Ganzton – Ganzton – Ganzton – Halbton.</p><div id="scale-vex"></div><div class="all-btns" style="margin-top:4px;"><button class="all-btn all-play" id="scale-play">▶ Tonleiter abspielen</button></div></div>
+
+      <div class="white-card" style="margin-bottom:20px;"><div style="font-size:1.2em;font-weight:700;color:#4527a0;letter-spacing:1px;margin-bottom:8px;">a-Moll natürlich</div><p class="desc" style="margin-bottom:12px;">Die parallele Molltonart zu C-Dur – gleiche Töne, aber von A ausgehend. Klingt melancholisch und dunkel.</p><div id="scale-nat-vex"></div><div class="all-btns" style="margin-top:4px;"><button class="all-btn all-play" id="scale-nat-play">▶ Tonleiter abspielen</button></div></div>
+
+      <div class="white-card" style="margin-bottom:20px;"><div style="font-size:1.2em;font-weight:700;color:#4527a0;letter-spacing:1px;margin-bottom:8px;">a-Moll harmonisch</div><p class="desc" style="margin-bottom:12px;">Wie natürlich Moll, aber mit erhöhter 7. Stufe (G→G♯). Der Leitton erzeugt eine stärkere Spannung zum Grundton – und den typischen „orientalischen" Klang.</p><div id="scale-harm-vex"></div><div class="all-btns" style="margin-top:4px;"><button class="all-btn all-play" id="scale-harm-play">▶ Tonleiter abspielen</button></div></div>
+
+      <div class="white-card"><div style="font-size:1.2em;font-weight:700;color:#4527a0;letter-spacing:1px;margin-bottom:8px;">a-Moll melodisch</div><p class="desc" style="margin-bottom:12px;">Aufwärts werden 6. und 7. Stufe erhöht (F→F♯, G→G♯), um den großen Sprung aus harmonisch Moll zu glätten. Abwärts wird wie natürlich Moll gespielt.</p><div id="scale-mel-vex"></div><div class="all-btns" style="margin-top:4px;"><button class="all-btn all-play" id="scale-mel-play">▶ Tonleiter abspielen</button></div></div>
+
+    </div>
+  </div>
+
+  <!-- S2 -->
+  <div class="page" id="page-s2">
+    <div class="sec-header sh-2"><div class="sec-breadcrumb"><a href="#" data-goto="home">Start</a><span>›</span>Stufentheorie</div><div class="sec-num">02</div><h2>Dreiklänge in C-Dur</h2><p class="desc">Auf jeder Stufe entsteht ein Dreiklang – <strong>3× Dur · 3× Moll · 1× Vermindert</strong></p></div>
+    <div class="sec-body"><div class="chord-row" id="chord-row"></div></div>
+  </div>
+
+  <!-- S3 -->
+  <div class="page" id="page-s3">
+    <div class="sec-header sh-3"><div class="sec-breadcrumb"><a href="#" data-goto="home">Start</a><span>›</span>Funktionstheorie</div><div class="sec-num">03</div><h2>Harmonische Funktionen</h2><p class="desc">Jeder Akkord erfüllt eine Rolle im harmonischen Gefüge.</p></div>
+    <div class="sec-body">
+      <div class="fkt-row">
+        <div class="fkt fkt-T" id="fkt-tonika"><div style="position:absolute;top:12px;right:14px;font-size:.75em;opacity:.65;" id="tonika-icon">🔊</div><div class="fkt-letter">T</div><div class="fkt-title">Tonika</div><div class="fkt-detail">Ruhe &amp; Ankunft.<br><strong>Hauptv.:</strong> I – C-Dur<br><strong>Nebenv.:</strong> III · VI</div></div>
+        <div class="fkt fkt-S"><div class="fkt-letter">S</div><div class="fkt-title">Subdominante</div><div class="fkt-detail">Bewegung weg.<br><strong>Hauptv.:</strong> IV – F-Dur<br><strong>Nebenv.:</strong> II · VI</div></div>
+        <div class="fkt fkt-D"><div class="fkt-letter">D</div><div class="fkt-title">Dominante</div><div class="fkt-detail">Stärkste Spannung.<br><strong>Hauptv.:</strong> V – G-Dur<br><strong>Nebenv.:</strong> VII° · III</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- S4 -->
+  <div class="page" id="page-s4">
+    <div class="sec-header sh-4"><div class="sec-breadcrumb"><a href="#" data-goto="home">Start</a><span>›</span>Umkehrungen</div><div class="sec-num">04</div><h2>Akkordumkehrungen</h2><p class="desc">Dreiklänge in verschiedenen Lagen – Klicken zum Abspielen.</p></div>
+    <div class="sec-body"><div class="umk-row" id="umk-row"></div></div>
+  </div>
+
+  <!-- S5 -->
+  <div class="page" id="page-s5">
+    <div class="sec-header sh-5"><div class="sec-breadcrumb"><a href="#" data-goto="home">Start</a><span>›</span>Kadenz</div><div class="sec-num">05</div><h2>Kadenz eingeben</h2><p class="desc">Töne in die Takte klicken – ab 3 Tönen erscheint der Akkordname.</p></div>
+    <div class="sec-body"><div class="kadenz-wrap"><div id="kadenz-vex"></div><div class="kadenz-row" id="kadenz-row"></div><div class="all-btns"><button class="all-btn all-play" id="kadenz-play-all">▶ Kadenz abspielen</button><button class="all-btn all-clr" id="kadenz-clear-all">✕ Alles leeren</button></div></div></div>
+  </div>
+
+  <!-- S6 -->
+  <div class="page" id="page-s6">
+    <div class="sec-header sh-6"><div class="sec-breadcrumb"><a href="#" data-goto="home">Start</a><span>›</span>Akkorde erstellen</div><div class="sec-num">06</div><h2>Akkorde erstellen &amp; benennen</h2><p class="desc">Töne klicken – Pop/Jazz-Akkord wird erkannt. Ton anklicken zum Verschieben.</p></div>
+    <div class="sec-body"><div class="white-card"><div id="builder-vex"></div><div class="builder-display"><div id="b-name"></div><div id="b-full"></div><div id="b-hint">Töne setzen um einen Akkord zu erstellen</div></div><div class="all-btns"><button class="all-btn all-play" id="b-play">▶ Akkord spielen</button><button class="all-btn all-clr" id="b-clear">✕ Leeren</button></div></div></div>
+  </div>
+
+  <!-- S7 -->
+  <div class="page" id="page-s7">
+    <div class="sec-header sh-7"><div class="sec-breadcrumb"><a href="#" data-goto="home">Start</a><span>›</span>Melodie schreiben</div><div class="sec-num">07</div><h2>🎼 Melodie schreiben</h2><p class="desc">Notenwert wählen → klicken. Bestehende Note anklicken = verschieben oder ersetzen.</p></div>
+    <div class="sec-body">
+      <div style="margin-bottom:20px;"><div class="s7-ctrl-lbl">Tonart</div><select class="s7-sel" id="s7-keysig"><option value="C">C-Dur</option><option value="G">G-Dur</option><option value="D">D-Dur</option><option value="A">A-Dur</option><option value="E">E-Dur</option><option value="F">F-Dur</option><option value="Bb">B♭-Dur</option><option value="Eb">E♭-Dur</option></select></div>
+      <div class="white-card" style="padding:20px 20px 14px;"><div class="s7-sys" id="s7-sys-0"></div><div class="s7-status" id="s7-st-0"></div><div class="s7-sys" id="s7-sys-1" style="margin-top:8px;"></div><div class="s7-status" id="s7-st-1"></div></div>
+      <div class="s7-palette">
+        <div class="s7-pg"><div class="s7-plbl">Noten</div><div class="s7-pbtns" id="s7-nbtns"><button class="s7-pbtn" data-dur="w"><em>○</em><span>Ganze</span></button><button class="s7-pbtn" data-dur="h"><em>◑</em><span>Halbe</span></button><button class="s7-pbtn active" data-dur="q"><em>♩</em><span>Viertel</span></button><button class="s7-pbtn" data-dur="qd"><em>♩·</em><span>V.pkt.</span></button><button class="s7-pbtn" data-dur="8"><em>♪</em><span>Achtel</span></button><button class="s7-pbtn" data-dur="8d"><em>♪·</em><span>A.pkt.</span></button></div></div>
+        <div class="s7-psep"></div>
+        <div class="s7-pg"><div class="s7-plbl">Pausen</div><div class="s7-pbtns" id="s7-rbtns"><button class="s7-pbtn" data-dur="w"><svg width="32" height="26" style="pointer-events:none;display:block;"><rect x="4" y="16" width="24" height="7" fill="#333" rx="1"/></svg><span>Ganze</span></button><button class="s7-pbtn" data-dur="h"><svg width="32" height="26" style="pointer-events:none;display:block;"><rect x="4" y="4" width="24" height="7" fill="#333" rx="1"/></svg><span>Halbe</span></button><button class="s7-pbtn" data-dur="q"><svg width="32" height="32" style="pointer-events:none;display:block;"><path d="M20,3 L10,3 L20,13 L8,15 Q6,22 10,26 Q13,28 15,25 Q12,23 14,20 L22,17 L11,9 L21,9 Z" fill="#333"/></svg><span>Viertel</span></button><button class="s7-pbtn" data-dur="8"><svg width="32" height="32" style="pointer-events:none;display:block;"><line x1="14" y1="28" x2="14" y2="6" stroke="#333" stroke-width="2"/><circle cx="19" cy="8" r="4" fill="#333"/><path d="M14,6 Q24,10 16,18" stroke="#333" stroke-width="2" fill="none"/></svg><span>Achtel</span></button></div></div>
+        <div class="s7-psep"></div>
+        <div class="s7-pg"><div class="s7-plbl">Vorzeichen</div><div class="s7-pbtns" id="s7-accs"><button class="s7-pbtn" id="s7-acc-sharp" data-acc="1"><em style="font-size:1.6em;font-family:serif;">♯</em><span>Kreuz</span></button><button class="s7-pbtn" id="s7-acc-flat" data-acc="-1"><em style="font-size:1.6em;font-family:serif;">♭</em><span>B</span></button><button class="s7-pbtn" id="s7-acc-nat" data-acc="n"><em style="font-size:1.6em;font-family:serif;">♮</em><span>Aufl.</span></button><button class="s7-pbtn active" id="s7-acc-none" data-acc="0"><em style="font-size:1em;">–</em><span>Kein</span></button></div></div>
+        <div class="s7-psep"></div>
+        <button class="all-btn all-play" id="s7-play" style="padding:8px 22px;font-size:.82em;">▶ Abspielen</button>
+        <button class="all-btn" id="s7-undo" style="background:#f0f0f3;color:#555;padding:8px 22px;font-size:.82em;">↩ Zurück</button>
+        <button class="all-btn all-clr" id="s7-clear" style="padding:8px 22px;font-size:.82em;">✕ Leeren</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- S8 -->
+  <div class="page" id="page-s8">
+    <div class="sec-header sh-8"><div class="sec-breadcrumb"><a href="#" data-goto="home">Start</a><span>›</span>Tempo &amp; Dynamik</div><div class="sec-num">08</div><h2>Tempo &amp; Dynamik</h2><p class="desc">Wie schnell und wie laut? Tempo und Dynamik geben der Musik Ausdruck und Charakter.</p></div>
+    <div class="sec-body">
+
+      <div class="hint">🎵 Begriffe anklicken = Beispiel hören</div>
+
+      <h3 style="font-family:'Open Sans',sans-serif;font-size:1.4em;margin-bottom:8px;">Tempobezeichnungen</h3>
+      <p class="desc">Das Tempo bestimmt, wie schnell oder langsam ein Musikstück gespielt wird – es ist sozusagen der Herzschlag der Musik. Gemessen wird es in BPM (Beats per Minute), also Schlägen pro Minute. Ein langsames Largo mit 40 BPM fühlt sich ruhig und getragen an, während ein Presto mit fast 200 BPM rasant und aufregend wirkt. Die Tempobezeichnungen stammen aus dem Italienischen, weil viele Grundlagen der Musiktheorie in der italienischen Tradition entstanden sind. Klicke auf eine Karte, um den Unterschied zu hören – die gleiche Tonleiter klingt je nach Tempo völlig anders!</p>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:36px;" id="tempo-cards">
+        <div class="tempo-card" data-bpm="40"><div class="tc-name">Largo</div><div class="tc-bpm">~40–60 BPM</div><div class="tc-desc">Sehr langsam, breit</div></div>
+        <div class="tempo-card" data-bpm="66"><div class="tc-name">Adagio</div><div class="tc-bpm">~66–76 BPM</div><div class="tc-desc">Langsam, ruhig</div></div>
+        <div class="tempo-card" data-bpm="80"><div class="tc-name">Andante</div><div class="tc-bpm">~76–108 BPM</div><div class="tc-desc">Gehend, mäßig</div></div>
+        <div class="tempo-card" data-bpm="112"><div class="tc-name">Moderato</div><div class="tc-bpm">~108–120 BPM</div><div class="tc-desc">Mäßig schnell</div></div>
+        <div class="tempo-card" data-bpm="132"><div class="tc-name">Allegro</div><div class="tc-bpm">~120–156 BPM</div><div class="tc-desc">Schnell, lebhaft</div></div>
+        <div class="tempo-card" data-bpm="168"><div class="tc-name">Vivace</div><div class="tc-bpm">~156–176 BPM</div><div class="tc-desc">Lebhaft, schnell</div></div>
+        <div class="tempo-card" data-bpm="188"><div class="tc-name">Presto</div><div class="tc-bpm">~168–200 BPM</div><div class="tc-desc">Sehr schnell</div></div>
+      </div>
+
+      <h3 style="font-family:'Open Sans',sans-serif;font-size:1.4em;margin-bottom:8px;">Dynamikzeichen</h3>
+      <p class="desc">Dynamik beschreibt die Lautstärke in der Musik – von hauchzart bis donnerlaut. Ohne Dynamik wäre jedes Stück eintönig und flach, denn erst der Wechsel zwischen leise und laut erzeugt Spannung und Emotion. Die Zeichen werden als kursive Buchstaben in die Noten geschrieben und basieren ebenfalls auf italienischen Begriffen: „piano" bedeutet leise, „forte" bedeutet laut. Dazwischen gibt es feine Abstufungen wie Mezzopiano (mittelleise) oder Mezzoforte (mittellaut). Klicke auf eine Karte und höre, wie sich ein Akkord bei unterschiedlicher Dynamik anfühlt!</p>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:36px;" id="dyn-cards">
+        <div class="dyn-card" data-vol="0.08"><div class="dc-sym"><i>pp</i></div><div class="dc-name">Pianissimo</div><div class="dc-desc">Sehr leise</div></div>
+        <div class="dyn-card" data-vol="0.15"><div class="dc-sym"><i>p</i></div><div class="dc-name">Piano</div><div class="dc-desc">Leise</div></div>
+        <div class="dyn-card" data-vol="0.25"><div class="dc-sym"><i>mp</i></div><div class="dc-name">Mezzopiano</div><div class="dc-desc">Mittelleise</div></div>
+        <div class="dyn-card" data-vol="0.35"><div class="dc-sym"><i>mf</i></div><div class="dc-name">Mezzoforte</div><div class="dc-desc">Mittellaut</div></div>
+        <div class="dyn-card" data-vol="0.5"><div class="dc-sym"><i>f</i></div><div class="dc-name">Forte</div><div class="dc-desc">Laut</div></div>
+        <div class="dyn-card" data-vol="0.7"><div class="dc-sym"><i>ff</i></div><div class="dc-name">Fortissimo</div><div class="dc-desc">Sehr laut</div></div>
+      </div>
+
+      <h3 style="font-family:'Open Sans',sans-serif;font-size:1.4em;margin-bottom:8px;">Tempoänderungen</h3>
+      <p class="desc">Musik lebt davon, dass sie nicht wie ein Metronom gleichförmig durchläuft – sie atmet. Mit Tempoänderungen und dynamischen Verläufen können Komponisten das Stück lebendiger gestalten. Ein „ritardando" am Ende eines Satzes lässt die Musik sanft zur Ruhe kommen, ein „accelerando" steigert die Spannung. Das „crescendo" führt die Lautstärke allmählich nach oben, während ein „decrescendo" sie wieder zurücknimmt. Diese Anweisungen stehen direkt in den Noten und geben dem Spieler die Freiheit, die Musik ausdrucksvoll zu interpretieren.</p>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;" id="change-cards">
+        <div class="change-card"><div class="cc-name">ritardando (rit.)</div><div class="cc-desc">Langsamer werden</div></div>
+        <div class="change-card"><div class="cc-name">accelerando (accel.)</div><div class="cc-desc">Schneller werden</div></div>
+        <div class="change-card"><div class="cc-name">a tempo</div><div class="cc-desc">Zurück zum Grundtempo</div></div>
+        <div class="change-card"><div class="cc-name">fermata (𝄐)</div><div class="cc-desc">Ton/Pause aushalten</div></div>
+        <div class="change-card"><div class="cc-name">crescendo (&lt;)</div><div class="cc-desc">Lauter werden</div></div>
+        <div class="change-card"><div class="cc-name">decrescendo (&gt;)</div><div class="cc-desc">Leiser werden</div></div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- S9 -->
+  <div class="page" id="page-s9">
+    <div class="sec-header sh-9"><div class="sec-breadcrumb"><a href="#" data-goto="home">Start</a><span>›</span>Der Quintenzirkel</div><div class="sec-num">09</div><h2>Der Quintenzirkel</h2><p class="desc">Die Verwandtschaft aller Tonarten auf einen Blick – das wichtigste Werkzeug der Harmonielehre.</p></div>
+    <div class="sec-body">
+
+      <p class="desc">Der Quintenzirkel ordnet alle zwölf Dur- und Moll-Tonarten in einem Kreis an. Von C-Dur ausgehend gelangt man im Uhrzeigersinn jeweils eine Quinte aufwärts zur nächsten Tonart – und erhält dabei ein Kreuz (♯) mehr. Gegen den Uhrzeigersinn geht es in Quinten abwärts, wobei jeweils ein B (♭) hinzukommt. Benachbarte Tonarten klingen besonders verwandt, weil sie fast die gleichen Töne teilen. Innen stehen die parallelen Moll-Tonarten, die jeweils dieselben Vorzeichen wie ihre Dur-Partner haben. Der Quintenzirkel ist das Schweizer Taschenmesser der Musiktheorie – einmal verstanden, erschließen sich Akkordfolgen, Modulationen und Tonartverwandtschaften fast von selbst.</p>
+
+      <div class="white-card" style="display:flex;justify-content:center;padding:32px 16px;">
+        <svg id="qz-svg" viewBox="0 0 600 600" width="520" height="520" style="max-width:100%;font-family:'Open Sans',sans-serif;">
+        </svg>
+      </div>
+
+      <div class="hint" style="margin-top:16px;">🎵 Tonart anklicken = Dreiklang hören · Außen: Dur · Innen: Moll</div>
+
+      <h3 style="font-family:'Open Sans',sans-serif;font-size:1.3em;margin:32px 0 8px;">Merksätze für die Vorzeichen</h3>
+      <p class="desc">Mit diesen Eselsbrücken merkst du dir sofort, welche Tonart wie viele Vorzeichen hat. Jeder Anfangsbuchstabe steht für eine Tonart – von einem Vorzeichen bis zu sechs.</p>
+
+      <div style="display:flex;flex-direction:column;gap:16px;margin-top:16px;">
+        <div style="background:linear-gradient(135deg,#fff8e1,#fff3e0);border:1px solid rgba(230,126,34,.15);border-radius:16px;padding:22px 24px;">
+          <div style="font-size:.62em;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#e65100;margin-bottom:8px;">♯ Kreuzvorzeichen</div>
+          <div style="font-family:'Open Sans',sans-serif;font-size:1.25em;color:#bf360c;line-height:1.4;margin-bottom:10px;"><span style="font-size:1.5em;font-weight:900;">G</span>eh <span style="font-size:1.5em;font-weight:900;">D</span>u <span style="font-size:1.5em;font-weight:900;">A</span>lter <span style="font-size:1.5em;font-weight:900;">E</span>sel <span style="font-size:1.5em;font-weight:900;">H</span>ole <span style="font-size:1.5em;font-weight:900;">Fis</span>che</div>
+          <div style="display:flex;gap:6px;flex-wrap:wrap;">
+            <span style="background:white;border-radius:8px;padding:3px 10px;font-size:.72em;font-weight:700;color:#e65100;">G = 1♯</span>
+            <span style="background:white;border-radius:8px;padding:3px 10px;font-size:.72em;font-weight:700;color:#e65100;">D = 2♯</span>
+            <span style="background:white;border-radius:8px;padding:3px 10px;font-size:.72em;font-weight:700;color:#e65100;">A = 3♯</span>
+            <span style="background:white;border-radius:8px;padding:3px 10px;font-size:.72em;font-weight:700;color:#e65100;">E = 4♯</span>
+            <span style="background:white;border-radius:8px;padding:3px 10px;font-size:.72em;font-weight:700;color:#e65100;">H = 5♯</span>
+            <span style="background:white;border-radius:8px;padding:3px 10px;font-size:.72em;font-weight:700;color:#e65100;">Fis = 6♯</span>
+          </div>
+        </div>
+
+        <div style="background:linear-gradient(135deg,#e8eaf6,#ede7f6);border:1px solid rgba(69,39,160,.12);border-radius:16px;padding:22px 24px;">
+          <div style="font-size:.62em;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#4527a0;margin-bottom:8px;">♭ B-Vorzeichen</div>
+          <div style="font-family:'Open Sans',sans-serif;font-size:1.25em;color:#283593;line-height:1.4;margin-bottom:10px;"><span style="font-size:1.5em;font-weight:900;">F</span>rische <span style="font-size:1.5em;font-weight:900;">B</span>rötchen <span style="font-size:1.5em;font-weight:900;">Es</span>sen <span style="font-size:1.5em;font-weight:900;">As</span>se <span style="font-size:1.5em;font-weight:900;">Des</span> <span style="font-size:1.5em;font-weight:900;">Ges</span>angs</div>
+          <div style="display:flex;gap:6px;flex-wrap:wrap;">
+            <span style="background:white;border-radius:8px;padding:3px 10px;font-size:.72em;font-weight:700;color:#4527a0;">F = 1♭</span>
+            <span style="background:white;border-radius:8px;padding:3px 10px;font-size:.72em;font-weight:700;color:#4527a0;">B = 2♭</span>
+            <span style="background:white;border-radius:8px;padding:3px 10px;font-size:.72em;font-weight:700;color:#4527a0;">Es = 3♭</span>
+            <span style="background:white;border-radius:8px;padding:3px 10px;font-size:.72em;font-weight:700;color:#4527a0;">As = 4♭</span>
+            <span style="background:white;border-radius:8px;padding:3px 10px;font-size:.72em;font-weight:700;color:#4527a0;">Des = 5♭</span>
+            <span style="background:white;border-radius:8px;padding:3px 10px;font-size:.72em;font-weight:700;color:#4527a0;">Ges = 6♭</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
