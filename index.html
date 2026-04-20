@@ -26,7 +26,6 @@
     <button class="nav-item" data-page="s7"><div class="nav-num">07</div><div class="nav-label">Melodie schreiben</div></button>
     <button class="nav-item" data-page="s8"><div class="nav-num">08</div><div class="nav-label">Tempo & Dynamik</div></button>
     <button class="nav-item" data-page="s9"><div class="nav-num">09</div><div class="nav-label">Der Quintenzirkel</div></button>
-    <button class="nav-item" data-page="s9"><div class="nav-num">09</div><div class="nav-label">Der Quintenzirkel</div></button>
   </div>
   <div class="nav-footer">Musiktheorie · 2026</div>
 </nav>
@@ -52,7 +51,6 @@
         <div class="hero-card" data-goto="s7"><div class="hero-card-num">07</div><div class="hero-card-title">Melodie schreiben</div></div>
         <div class="hero-card" data-goto="s8"><div class="hero-card-num">08</div><div class="hero-card-title">Tempo & Dynamik</div></div>
         <div class="hero-card" data-goto="s9"><div class="hero-card-num">09</div><div class="hero-card-title">Der Quintenzirkel</div></div>
-        <div class="hero-card" data-goto="s9"><div class="hero-card-num">09</div><div class="hero-card-title">Der Quintenzirkel</div></div>
       </div>
       <div class="hero-deco">𝄞</div>
     </div>
@@ -63,15 +61,10 @@
     <div class="sec-header sh-1"><div class="sec-breadcrumb"><a href="#" data-goto="home">Start</a><span>›</span>Tonleitern</div><div class="sec-num">01</div><h2>Tonleitern</h2><p class="desc">Die wichtigsten Tonleitern im Überblick – Dur und die drei Moll-Varianten. Klicke auf die Noten, um sie einzeln zu hören, oder spiele die ganze Tonleiter ab.</p></div>
     <div class="sec-body">
       <div class="hint">🎵 Note anklicken = Ton hören</div>
-
       <div class="white-card" style="margin-bottom:20px;"><div style="font-size:1.2em;font-weight:700;color:#4527a0;letter-spacing:1px;margin-bottom:8px;">C-Dur</div><p class="desc" style="margin-bottom:12px;">Die Grundtonleiter ohne Vorzeichen. Aufbau: Ganzton – Ganzton – Halbton – Ganzton – Ganzton – Ganzton – Halbton.</p><div id="scale-vex"></div><div class="all-btns" style="margin-top:4px;"><button class="all-btn all-play" id="scale-play">▶ Tonleiter abspielen</button></div></div>
-
       <div class="white-card" style="margin-bottom:20px;"><div style="font-size:1.2em;font-weight:700;color:#4527a0;letter-spacing:1px;margin-bottom:8px;">a-Moll natürlich</div><p class="desc" style="margin-bottom:12px;">Die parallele Molltonart zu C-Dur – gleiche Töne, aber von A ausgehend. Klingt melancholisch und dunkel.</p><div id="scale-nat-vex"></div><div class="all-btns" style="margin-top:4px;"><button class="all-btn all-play" id="scale-nat-play">▶ Tonleiter abspielen</button></div></div>
-
       <div class="white-card" style="margin-bottom:20px;"><div style="font-size:1.2em;font-weight:700;color:#4527a0;letter-spacing:1px;margin-bottom:8px;">a-Moll harmonisch</div><p class="desc" style="margin-bottom:12px;">Wie natürlich Moll, aber mit erhöhter 7. Stufe (G→G♯). Der Leitton erzeugt eine stärkere Spannung zum Grundton – und den typischen „orientalischen" Klang.</p><div id="scale-harm-vex"></div><div class="all-btns" style="margin-top:4px;"><button class="all-btn all-play" id="scale-harm-play">▶ Tonleiter abspielen</button></div></div>
-
       <div class="white-card"><div style="font-size:1.2em;font-weight:700;color:#4527a0;letter-spacing:1px;margin-bottom:8px;">a-Moll melodisch</div><p class="desc" style="margin-bottom:12px;">Aufwärts werden 6. und 7. Stufe erhöht (F→F♯, G→G♯), um den großen Sprung aus harmonisch Moll zu glätten. Abwärts wird wie natürlich Moll gespielt.</p><div id="scale-mel-vex"></div><div class="all-btns" style="margin-top:4px;"><button class="all-btn all-play" id="scale-mel-play">▶ Tonleiter abspielen</button></div></div>
-
     </div>
   </div>
 
@@ -107,8 +100,193 @@
 
   <!-- S6 -->
   <div class="page" id="page-s6">
-    <div class="sec-header sh-6"><div class="sec-breadcrumb"><a href="#" data-goto="home">Start</a><span>›</span>Akkorde erstellen</div><div class="sec-num">06</div><h2>Akkorde erstellen &amp; benennen</h2><p class="desc">Töne klicken – Pop/Jazz-Akkord wird erkannt. Ton anklicken zum Verschieben.</p></div>
-    <div class="sec-body"><div class="white-card"><div id="builder-vex"></div><div class="builder-display"><div id="b-name"></div><div id="b-full"></div><div id="b-hint">Töne setzen um einen Akkord zu erstellen</div></div><div class="all-btns"><button class="all-btn all-play" id="b-play">▶ Akkord spielen</button><button class="all-btn all-clr" id="b-clear">✕ Leeren</button></div></div></div>
+    <div class="sec-header sh-6"><div class="sec-breadcrumb"><a href="#" data-goto="home">Start</a><span>›</span>Akkorde erstellen</div><div class="sec-num">06</div><h2>Akkorde erstellen &amp; benennen</h2><p class="desc">Lerne, wie Akkorde aufgebaut sind – vom einfachen Dreiklang bis zum Jazzakkord. Dann probiere es selbst aus!</p></div>
+    <div class="sec-body">
+      
+      <div class="theorie-section">
+        <h3>Was ist ein Akkord?</h3>
+        <p>Ein Akkord entsteht, wenn <strong>mindestens drei Töne gleichzeitig</strong> erklingen. Anders als bei einer Melodie, wo Töne nacheinander gespielt werden, stapeln wir beim Akkord die Töne übereinander – wie Stockwerke eines Hauses.</p>
+        
+        <h3>Der Dreiklang – das Fundament</h3>
+        <p>Der einfachste Akkord ist der <strong>Dreiklang</strong>. Er besteht aus drei Tönen, die wir durch „Terzschichtung" gewinnen – wir überspringen beim Stapeln immer einen Ton der Tonleiter.</p>
+        
+        <div class="theorie-box">
+          <h4>Beispiel: C-Dur-Dreiklang</h4>
+          <div class="akkord-formula">
+            <div class="akkord-note"><div class="note-name">C</div><div class="note-label">Grundton</div></div>
+            <div class="akkord-arrow">+</div>
+            <div class="akkord-note"><div class="note-name">E</div><div class="note-label">Terz</div></div>
+            <div class="akkord-arrow">+</div>
+            <div class="akkord-note"><div class="note-name">G</div><div class="note-label">Quinte</div></div>
+            <div class="akkord-arrow">=</div>
+            <div class="akkord-note" style="background:linear-gradient(135deg,#e8f5e9,#c8e6c9);"><div class="note-name" style="color:#2e7d32;">C</div><div class="note-label">Dur-Dreiklang</div></div>
+          </div>
+          <ul>
+            <li><strong>Grundton (C):</strong> Das Fundament – nach ihm wird der Akkord benannt</li>
+            <li><strong>Terz (E):</strong> Bestimmt, ob der Akkord Dur oder Moll klingt</li>
+            <li><strong>Quinte (G):</strong> Gibt dem Akkord Stabilität und Fülle</li>
+          </ul>
+          <div style="margin-top:24px;padding-top:20px;border-top:1px solid rgba(0,150,136,.15);">
+            <div style="font-size:.8em;font-weight:700;color:var(--teal);margin-bottom:6px;">🎵 So sieht der C-Dur-Dreiklang in Noten aus:</div>
+            <div id="cdur-demo-vex"></div>
+            <div style="margin-top:12px;"><button class="all-btn all-play" id="cdur-demo-play">▶ C-Dur abspielen</button></div>
+          </div>
+        </div>
+        
+        <div style="display:flex;gap:16px;flex-wrap:wrap;margin:32px 0;">
+          <div class="akkord-mini-card">
+            <div class="amc-name">F-Dur</div>
+            <div class="amc-notes">F – A – C</div>
+            <div id="fdur-demo-vex"></div>
+            <button class="amc-play" id="fdur-demo-play">▶ Abspielen</button>
+          </div>
+          <div class="akkord-mini-card">
+            <div class="amc-name">G-Dur</div>
+            <div class="amc-notes">G – H – D</div>
+            <div id="gdur-demo-vex"></div>
+            <button class="amc-play" id="gdur-demo-play">▶ Abspielen</button>
+          </div>
+          <div class="akkord-mini-card">
+            <div class="amc-name">D-Dur</div>
+            <div class="amc-notes">D – F♯ – A</div>
+            <div id="ddur-demo-vex"></div>
+            <button class="amc-play" id="ddur-demo-play">▶ Abspielen</button>
+          </div>
+          <div class="akkord-mini-card">
+            <div class="amc-name">E-Dur</div>
+            <div class="amc-notes">E – G♯ – H</div>
+            <div id="edur-demo-vex"></div>
+            <button class="amc-play" id="edur-demo-play">▶ Abspielen</button>
+          </div>
+        </div>
+        
+        <div class="hinweis-box">
+          <div class="hinweis-icon"><svg width="28" height="48" viewBox="0 0 80 160"><path d="M35 18 Q52 18, 50 45 Q48 70, 44 95 Q42 110, 40 110 Q38 110, 36 95 Q32 70, 30 45 Q28 18, 35 18 Z" fill="#e65100" stroke="#bf360c" stroke-width="1"/><ellipse cx="40" cy="138" rx="12" ry="10" fill="#e65100" stroke="#bf360c" stroke-width="1"/></svg></div>
+          <div class="hinweis-text">
+            <strong>Gut zu wissen:</strong> Nicht wundern über die Vorzeichen! Je nach Tonart braucht ein Dur-Akkord Kreuze (♯) oder Bs (♭), damit die große Terz erhalten bleibt. Bei D-Dur etwa wird das F zum F♯ – sonst wäre es ein Moll-Akkord. Die Vorzeichen sorgen also dafür, dass der Akkord seinen Charakter behält.
+          </div>
+        </div>
+        
+        <h3>Dur vs. Moll – der Unterschied liegt in der Terz</h3>
+        <p>Ob ein Akkord fröhlich oder traurig klingt, entscheidet ein einziges Intervall: die <strong>Terz</strong>. Eine Terz ist der Abstand zwischen zwei Tönen, bei dem wir genau einen Ton der Tonleiter überspringen – zum Beispiel von C nach E (wir überspringen D). Dabei gibt es zwei Varianten: Die <strong>große Terz</strong> umfasst 4 Halbtonschritte (z.&nbsp;B. C→E), die <strong>kleine Terz</strong> nur 3 Halbtonschritte (z.&nbsp;B. C→E♭). Dieser scheinbar winzige Unterschied von nur einem Halbton hat eine riesige Wirkung auf den Klang.</p>
+        <p>Ein <strong>Dur-Dreiklang</strong> beginnt mit einer großen Terz, gefolgt von einer kleinen Terz – das ergibt den hellen, offenen Charakter, den wir etwa aus „Freude, schöner Götterfunken" kennen. Ein <strong>Moll-Dreiklang</strong> dreht die Reihenfolge um: Zuerst kommt die kleine Terz, dann die große. Das Ergebnis klingt dunkler, nachdenklicher und oft melancholisch. Beide Akkorde teilen sich den gleichen Grundton und die gleiche Quinte – nur die Terz in der Mitte verschiebt sich um einen einzigen Halbton und verwandelt damit den gesamten Charakter:</p>
+        
+        <div style="display:flex;gap:24px;flex-wrap:wrap;margin:32px 0 48px;">
+          <div class="theorie-box" style="flex:1;min-width:240px;margin:0;">
+            <h4 style="color:#2e7d32;">☀️ Dur-Dreiklang</h4>
+            <p style="margin-bottom:8px;"><strong>Große Terz</strong> (4 Halbtonschritte) + kleine Terz (3 Halbtonschritte)</p>
+            <p style="margin-bottom:8px;">C – E – G</p>
+            <p style="font-style:italic;color:var(--muted);margin:0;">→ Klingt hell, fröhlich, offen</p>
+          </div>
+          <div class="theorie-box theorie-box-purple" style="flex:1;min-width:240px;margin:0;">
+            <h4>🌙 Moll-Dreiklang</h4>
+            <p style="margin-bottom:8px;"><strong>Kleine Terz</strong> (3 Halbtonschritte) + große Terz (4 Halbtonschritte)</p>
+            <p style="margin-bottom:8px;">C – E♭ – G</p>
+            <p style="font-style:italic;color:var(--muted);margin:0;">→ Klingt dunkel, melancholisch</p>
+          </div>
+        </div>
+        
+        <div class="white-card" style="margin:40px 0 48px;padding:28px 30px;">
+          <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-bottom:20px;">
+            <div style="font-size:1.05em;font-weight:800;color:var(--teal);">🎬 Schritt für Schritt: Dreiklang bauen</div>
+            <div style="display:flex;gap:8px;">
+              <button class="all-btn" id="demo-dur-btn" style="background:linear-gradient(135deg,#2e7d32,#43a047);color:white;padding:9px 20px;font-size:.8em;">☀️ Dur zeigen</button>
+              <button class="all-btn" id="demo-moll-btn" style="background:linear-gradient(135deg,var(--purple),#7b1fa2);color:white;padding:9px 20px;font-size:.8em;">🌙 Moll zeigen</button>
+              <button class="all-btn" id="demo-reset-btn" style="background:#f0f0f3;color:#555;padding:9px 16px;font-size:.8em;">↩ Reset</button>
+            </div>
+          </div>
+          <div id="demo-status" style="text-align:center;font-size:.95em;font-weight:700;color:var(--muted);min-height:28px;margin-bottom:16px;">Klicke auf „Dur zeigen" oder „Moll zeigen"</div>
+          <div id="demo-strip" style="display:flex;gap:3px;justify-content:center;margin:0 auto;max-width:560px;"></div>
+          <div id="demo-bracket-row" style="display:flex;gap:3px;justify-content:center;max-width:560px;margin:10px auto 0;min-height:36px;"></div>
+          <div id="demo-result" style="text-align:center;margin-top:8px;min-height:40px;"></div>
+        </div>
+        
+        <h3>Akkorde erweitern – mehr Farbe, mehr Ausdruck</h3>
+        <p>Dreiklänge sind die Basis, aber in Pop, Jazz und moderner Musik werden sie oft erweitert. Dabei fügen wir weitere Töne hinzu oder verändern bestehende:</p>
+        
+        <div class="theorie-box">
+          <h4>🎷 Septakkorde (Vierklänge)</h4>
+          <p>Wir stapeln eine weitere Terz auf die Quinte:</p>
+          <ul>
+            <li><strong>Cmaj7</strong> (große Septime): C – E – G – <strong>H</strong> → weich, jazzig, entspannt</li>
+            <li><strong>C7</strong> (Dominantseptakkord): C – E – G – <strong>B</strong> → spannungsgeladen, will sich auflösen</li>
+            <li><strong>Cm7</strong> (Moll-Septakkord): C – E♭ – G – <strong>B</strong> → melancholisch-smooth</li>
+          </ul>
+        </div>
+        
+        <div style="display:flex;gap:16px;flex-wrap:wrap;margin:24px 0 8px;">
+          <div class="akkord-mini-card">
+            <div class="amc-name">Cmaj7</div>
+            <div class="amc-notes">C – E – G – H</div>
+            <div id="cmaj7-demo-vex"></div>
+            <button class="amc-play" id="cmaj7-demo-play">▶ Abspielen</button>
+          </div>
+          <div class="akkord-mini-card">
+            <div class="amc-name">C7</div>
+            <div class="amc-notes">C – E – G – B</div>
+            <div id="c7-demo-vex"></div>
+            <button class="amc-play" id="c7-demo-play">▶ Abspielen</button>
+          </div>
+          <div class="akkord-mini-card">
+            <div class="amc-name">Cm7</div>
+            <div class="amc-notes">C – E♭ – G – B</div>
+            <div id="cm7-demo-vex"></div>
+            <button class="amc-play" id="cm7-demo-play">▶ Abspielen</button>
+          </div>
+        </div>
+        
+        <div class="theorie-box theorie-box-orange">
+          <h4>🎸 Sus-Akkorde (suspendiert)</h4>
+          <p>Die Terz wird ersetzt – der Akkord „schwebt", weil Dur/Moll unklar ist:</p>
+          <ul>
+            <li><strong>Csus2:</strong> C – <strong>D</strong> – G (Terz durch Sekunde ersetzt) → offen, modern</li>
+            <li><strong>Csus4:</strong> C – <strong>F</strong> – G (Terz durch Quarte ersetzt) → schwebend, will sich auflösen</li>
+          </ul>
+        </div>
+        
+        <div class="theorie-box">
+          <h4>✨ Add-Akkorde & Erweiterungen</h4>
+          <p>Wir fügen Töne hinzu, ohne andere zu ersetzen:</p>
+          <ul>
+            <li><strong>Cadd9:</strong> C – E – G – <strong>D</strong> → voll, warm, typisch für Pop</li>
+            <li><strong>C9, C11, C13:</strong> Immer weitere Terzen gestapelt → komplexer Jazzklang</li>
+          </ul>
+        </div>
+        
+        <h3>Übersicht: Vom Dreiklang zum Jazzakkord</h3>
+        <div class="white-card" style="padding:0;overflow:hidden;margin-top:24px;">
+          <table class="akkord-table">
+            <thead>
+              <tr><th>Akkord</th><th>Töne</th><th>Charakter</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>C</strong></td><td>C – E – G</td><td>Grundlegend, klar</td></tr>
+              <tr><td><strong>Cm</strong></td><td>C – E♭ – G</td><td>Dunkel, traurig</td></tr>
+              <tr><td><strong>C7</strong></td><td>C – E – G – B</td><td>Spannend, drängend</td></tr>
+              <tr><td><strong>Cmaj7</strong></td><td>C – E – G – H</td><td>Weich, sophisticated</td></tr>
+              <tr><td><strong>Csus4</strong></td><td>C – F – G</td><td>Schwebend, offen</td></tr>
+              <tr><td><strong>Cadd9</strong></td><td>C – E – G – D</td><td>Voll, modern</td></tr>
+              <tr><td><strong>Cm7</strong></td><td>C – E♭ – G – B</td><td>Smooth, melancholisch</td></tr>
+            </tbody>
+          </table>
+        </div>
+        
+        <div class="merke-box">
+          <h4>💡 Merke dir:</h4>
+          <ol>
+            <li><strong>Grundton</strong> = Name des Akkords</li>
+            <li><strong>Terz</strong> = Dur oder Moll</li>
+            <li><strong>Quinte</strong> = Stabilität</li>
+            <li><strong>Weitere Töne</strong> = Farbe und Ausdruck</li>
+          </ol>
+        </div>
+      </div>
+      
+      <div class="interactive-divider"><span>✏️ Jetzt selbst ausprobieren</span></div>
+      
+      <div class="hint">🎵 Klicke ins Notensystem um Töne zu setzen – der Akkord wird automatisch erkannt!</div>
+      <div class="white-card"><div id="builder-vex"></div><div class="builder-display"><div id="b-name"></div><div id="b-full"></div><div id="b-hint">Töne setzen um einen Akkord zu erstellen</div></div><div class="all-btns"><button class="all-btn all-play" id="b-play">▶ Akkord spielen</button><button class="all-btn all-clr" id="b-clear">✕ Leeren</button></div></div>
+    </div>
   </div>
 
   <!-- S7 -->
@@ -135,11 +313,9 @@
   <div class="page" id="page-s8">
     <div class="sec-header sh-8"><div class="sec-breadcrumb"><a href="#" data-goto="home">Start</a><span>›</span>Tempo &amp; Dynamik</div><div class="sec-num">08</div><h2>Tempo &amp; Dynamik</h2><p class="desc">Wie schnell und wie laut? Tempo und Dynamik geben der Musik Ausdruck und Charakter.</p></div>
     <div class="sec-body">
-
       <div class="hint">🎵 Begriffe anklicken = Beispiel hören</div>
-
       <h3 style="font-family:'Open Sans',sans-serif;font-size:1.4em;margin-bottom:8px;">Tempobezeichnungen</h3>
-      <p class="desc">Das Tempo bestimmt, wie schnell oder langsam ein Musikstück gespielt wird – es ist sozusagen der Herzschlag der Musik. Gemessen wird es in BPM (Beats per Minute), also Schlägen pro Minute. Ein langsames Largo mit 40 BPM fühlt sich ruhig und getragen an, während ein Presto mit fast 200 BPM rasant und aufregend wirkt. Die Tempobezeichnungen stammen aus dem Italienischen, weil viele Grundlagen der Musiktheorie in der italienischen Tradition entstanden sind. Klicke auf eine Karte, um den Unterschied zu hören – die gleiche Tonleiter klingt je nach Tempo völlig anders!</p>
+      <p class="desc" style="margin-bottom:16px;">Das Tempo bestimmt, wie schnell oder langsam ein Musikstück gespielt wird – es ist sozusagen der Herzschlag der Musik. Gemessen wird es in BPM (Beats per Minute), also Schlägen pro Minute.</p>
       <div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:36px;" id="tempo-cards">
         <div class="tempo-card" data-bpm="40"><div class="tc-name">Largo</div><div class="tc-bpm">~40–60 BPM</div><div class="tc-desc">Sehr langsam, breit</div></div>
         <div class="tempo-card" data-bpm="66"><div class="tc-name">Adagio</div><div class="tc-bpm">~66–76 BPM</div><div class="tc-desc">Langsam, ruhig</div></div>
@@ -149,9 +325,8 @@
         <div class="tempo-card" data-bpm="168"><div class="tc-name">Vivace</div><div class="tc-bpm">~156–176 BPM</div><div class="tc-desc">Lebhaft, schnell</div></div>
         <div class="tempo-card" data-bpm="188"><div class="tc-name">Presto</div><div class="tc-bpm">~168–200 BPM</div><div class="tc-desc">Sehr schnell</div></div>
       </div>
-
       <h3 style="font-family:'Open Sans',sans-serif;font-size:1.4em;margin-bottom:8px;">Dynamikzeichen</h3>
-      <p class="desc">Dynamik beschreibt die Lautstärke in der Musik – von hauchzart bis donnerlaut. Ohne Dynamik wäre jedes Stück eintönig und flach, denn erst der Wechsel zwischen leise und laut erzeugt Spannung und Emotion. Die Zeichen werden als kursive Buchstaben in die Noten geschrieben und basieren ebenfalls auf italienischen Begriffen: „piano" bedeutet leise, „forte" bedeutet laut. Dazwischen gibt es feine Abstufungen wie Mezzopiano (mittelleise) oder Mezzoforte (mittellaut). Klicke auf eine Karte und höre, wie sich ein Akkord bei unterschiedlicher Dynamik anfühlt!</p>
+      <p class="desc" style="margin-bottom:16px;">Dynamik beschreibt die Lautstärke in der Musik – von hauchzart bis donnerlaut.</p>
       <div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:36px;" id="dyn-cards">
         <div class="dyn-card" data-vol="0.08"><div class="dc-sym"><i>pp</i></div><div class="dc-name">Pianissimo</div><div class="dc-desc">Sehr leise</div></div>
         <div class="dyn-card" data-vol="0.15"><div class="dc-sym"><i>p</i></div><div class="dc-name">Piano</div><div class="dc-desc">Leise</div></div>
@@ -160,9 +335,7 @@
         <div class="dyn-card" data-vol="0.5"><div class="dc-sym"><i>f</i></div><div class="dc-name">Forte</div><div class="dc-desc">Laut</div></div>
         <div class="dyn-card" data-vol="0.7"><div class="dc-sym"><i>ff</i></div><div class="dc-name">Fortissimo</div><div class="dc-desc">Sehr laut</div></div>
       </div>
-
       <h3 style="font-family:'Open Sans',sans-serif;font-size:1.4em;margin-bottom:8px;">Tempoänderungen</h3>
-      <p class="desc">Musik lebt davon, dass sie nicht wie ein Metronom gleichförmig durchläuft – sie atmet. Mit Tempoänderungen und dynamischen Verläufen können Komponisten das Stück lebendiger gestalten. Ein „ritardando" am Ende eines Satzes lässt die Musik sanft zur Ruhe kommen, ein „accelerando" steigert die Spannung. Das „crescendo" führt die Lautstärke allmählich nach oben, während ein „decrescendo" sie wieder zurücknimmt. Diese Anweisungen stehen direkt in den Noten und geben dem Spieler die Freiheit, die Musik ausdrucksvoll zu interpretieren.</p>
       <div style="display:flex;gap:12px;flex-wrap:wrap;" id="change-cards">
         <div class="change-card"><div class="cc-name">ritardando (rit.)</div><div class="cc-desc">Langsamer werden</div></div>
         <div class="change-card"><div class="cc-name">accelerando (accel.)</div><div class="cc-desc">Schneller werden</div></div>
@@ -171,7 +344,6 @@
         <div class="change-card"><div class="cc-name">crescendo (&lt;)</div><div class="cc-desc">Lauter werden</div></div>
         <div class="change-card"><div class="cc-name">decrescendo (&gt;)</div><div class="cc-desc">Leiser werden</div></div>
       </div>
-
     </div>
   </div>
 
@@ -179,19 +351,12 @@
   <div class="page" id="page-s9">
     <div class="sec-header sh-9"><div class="sec-breadcrumb"><a href="#" data-goto="home">Start</a><span>›</span>Der Quintenzirkel</div><div class="sec-num">09</div><h2>Der Quintenzirkel</h2><p class="desc">Die Verwandtschaft aller Tonarten auf einen Blick – das wichtigste Werkzeug der Harmonielehre.</p></div>
     <div class="sec-body">
-
-      <p class="desc">Der Quintenzirkel ordnet alle zwölf Dur- und Moll-Tonarten in einem Kreis an. Von C-Dur ausgehend gelangt man im Uhrzeigersinn jeweils eine Quinte aufwärts zur nächsten Tonart – und erhält dabei ein Kreuz (♯) mehr. Gegen den Uhrzeigersinn geht es in Quinten abwärts, wobei jeweils ein B (♭) hinzukommt. Benachbarte Tonarten klingen besonders verwandt, weil sie fast die gleichen Töne teilen. Innen stehen die parallelen Moll-Tonarten, die jeweils dieselben Vorzeichen wie ihre Dur-Partner haben. Der Quintenzirkel ist das Schweizer Taschenmesser der Musiktheorie – einmal verstanden, erschließen sich Akkordfolgen, Modulationen und Tonartverwandtschaften fast von selbst.</p>
-
+      <p class="desc" style="margin-bottom:24px;">Der Quintenzirkel ordnet alle zwölf Dur- und Moll-Tonarten in einem Kreis an. Von C-Dur ausgehend gelangt man im Uhrzeigersinn jeweils eine Quinte aufwärts zur nächsten Tonart – und erhält dabei ein Kreuz (♯) mehr.</p>
       <div class="white-card" style="display:flex;justify-content:center;padding:32px 16px;">
-        <svg id="qz-svg" viewBox="0 0 600 600" width="520" height="520" style="max-width:100%;font-family:'Open Sans',sans-serif;">
-        </svg>
+        <svg id="qz-svg" viewBox="0 0 600 600" width="520" height="520" style="max-width:100%;font-family:'Open Sans',sans-serif;"></svg>
       </div>
-
       <div class="hint" style="margin-top:16px;">🎵 Tonart anklicken = Dreiklang hören · Außen: Dur · Innen: Moll</div>
-
       <h3 style="font-family:'Open Sans',sans-serif;font-size:1.3em;margin:32px 0 8px;">Merksätze für die Vorzeichen</h3>
-      <p class="desc">Mit diesen Eselsbrücken merkst du dir sofort, welche Tonart wie viele Vorzeichen hat. Jeder Anfangsbuchstabe steht für eine Tonart – von einem Vorzeichen bis zu sechs.</p>
-
       <div style="display:flex;flex-direction:column;gap:16px;margin-top:16px;">
         <div style="background:linear-gradient(135deg,#fff8e1,#fff3e0);border:1px solid rgba(230,126,34,.15);border-radius:16px;padding:22px 24px;">
           <div style="font-size:.62em;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#e65100;margin-bottom:8px;">♯ Kreuzvorzeichen</div>
@@ -205,7 +370,6 @@
             <span style="background:white;border-radius:8px;padding:3px 10px;font-size:.72em;font-weight:700;color:#e65100;">Fis = 6♯</span>
           </div>
         </div>
-
         <div style="background:linear-gradient(135deg,#e8eaf6,#ede7f6);border:1px solid rgba(69,39,160,.12);border-radius:16px;padding:22px 24px;">
           <div style="font-size:.62em;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#4527a0;margin-bottom:8px;">♭ B-Vorzeichen</div>
           <div style="font-family:'Open Sans',sans-serif;font-size:1.25em;color:#283593;line-height:1.4;margin-bottom:10px;"><span style="font-size:1.5em;font-weight:900;">F</span>rische <span style="font-size:1.5em;font-weight:900;">B</span>rötchen <span style="font-size:1.5em;font-weight:900;">Es</span>sen <span style="font-size:1.5em;font-weight:900;">As</span>se <span style="font-size:1.5em;font-weight:900;">Des</span> <span style="font-size:1.5em;font-weight:900;">Ges</span>angs</div>
@@ -219,11 +383,11 @@
           </div>
         </div>
       </div>
-
     </div>
   </div>
 
 </div>
+
 
 <script src="script.js"></script>
 </body>
